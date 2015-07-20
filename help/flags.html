@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="theme-color" content="#5DB2FF">
+<meta name="renderer" content="webkit">
+<meta name="keywords" content="hosts">
+<title>Chrome Flags</title>
+<link href="common.css" rel="stylesheet">
+<link href="help.css" rel="stylesheet">
+<style>.help-cont a{color:red;}</style>
+</head>
+
+<body>
+<div class="head-warp">
+  <div class="head">
+    <h1><a href="http://tieba.baidu.com/f?ie=utf-8&kw=chrome"><img alt="Chrome" src="chrome.jpg" style="width:140px"></a></h1>
+    <div class="nav-box">
+      <ul>
+          <li class="cur"><a href="index.html">首页</a></li>
+          <li class="last"><a href="http://tieba.baidu.com/f?ie=utf-8&kw=chrome" target="_blank">百度贴吧&gt;&gt;</a></li>
+      </ul>
+      <div class="nav-line" style="left: 274px; width: 52px;"></div>
+    </div>
+  </div>
+</div>
+<div class="main">
+  <div class="help clearfix">
+    <div class="help-side fl">
+      <dl>
+        <dt>帮助导航</dt>
+        <dd class="cur">
+		<a href="index.html">Hosts常见问题</a></dd> 
+        <dd><a href="download.html">Chrome下载安装</a></dd>
+		<dd><a href="flags.html">Chrome实验室选项</a></dd>
+		<dd><a href="https://support.google.com/chrome/?hl=zh-Hans">Chrome官方帮助</a></dd>
+      </dl>
+       <div class="side-slider" style="top: 24px;"></div>
+    </div>
+    <div class="help-cont">
+      <h2>Chrome://flags 实验室选项</h2>
+	  
+      
+	  <dl>
+	  <dt><a href="index.html#nogo">Mactype无法渲染文字</a></dt>
+	  <dd style="display: none;">Google推出了全新的渲染技术Directwrite，但这项技术与Mactype有冲突<br/>
+	  较新版前往 chrome://flags/#disable-direct-write 启用“停用DirectWrite”这个选项
+      较旧版前往 chrome://flags/#enable-direct-write  禁用DirectWrite
+	  <br/><br/>
+	  <strong style="color:red">*以下修改可能导致Chrome不稳定、崩溃</strong><br/>
+	  这样修改之后网页内容可以渲染了，但书签栏、地址栏、菜单栏等UI中的文字还是无法渲染，需要在快捷方式的属性目标的引号后添加 --disable-directwrite-for-ui(有一个空格)
+	  </dd></dl>
+	  
+	  <dl>
+	  <dt><a href="index.html#nogo">启用NPAPI插件</a></dt>
+	  <dd style="display: none;">在最近一次的更新(42.0.2311.90)中Google默认关闭了对不安全的NPAPI插件的支持，需前往 chrome://flags/#enable-npapi 手动开启<br/>
+	  <strong style="color:red">注：Google将于今年（2015）9月份完全移除对NPAPI插件的支持，届时将移除这个flags选项，无法再开启NPAPI的支持</strong>
+	  </dd></dl>
+	  
+	  <dl>
+	  <dt><a href="index.html#nogo">启用单标签页静音</a></dt>
+	  <dd style="display: none;">你是否受够了某些网页烦人的背景音效？<br/>赶快前往 chrome://flags/#enable-tab-audio-muting 开启单标签页静音吧
+	  </dd></dl>
+	  
+	  <dl>
+	  <dt><a href="index.html#nogo">启用恢复下载</a></dt>
+	  <dd style="display: none;">你是否受够了Chrome的下载不能断点续传？<br/>赶快前往 chrome://flags/#enable-download-resumption 开启恢复下载吧
+	  </dd></dl>
+	  
+	  <dl>
+	  <dt><a href="index.html#nogo">停用自动保存密码</a></dt>
+	  <dd style="display: none;">你是否受够了Chrome的保存密码提示？<br/>赶快前往 chrome://flags/#enable-automatic-password-saving 停用它吧
+	  </dd></dl>
+	  
+	  <dl>
+	  <dt><a href="index.html#nogo">停用硬件加速的视频解码</a></dt>
+	  <dd style="display: none;color:red";>*你是否受够了Chrome看视频占用率奇高、卡顿？<br/> 赶快前往 chrome://flags/#disable-accelerated-video-decode 开启停用硬件加速的视频解码吧
+	  </dd></dl>
+	  
+	  <dl>
+	  <dt><a href="index.html#nogo">停用新版书签管理器</a></dt>
+	  <dd style="display: none;">Google在最近的更新中修改了书签管理器，使用时需连接Google服务器，因为无法连接Google服务器会导致卡顿而大大降低体验<br/>
+	  可前往以下URL关闭<br/> chrome://flags/#enhanced-bookmarks-experiment<br/> chrome://flags/#enable-supervised-user-managed-bookmarks-folder
+	  </dd></dl>
+	  
+	  
+	  <dl>
+	  <dt><a href="index.html#nogo">停用新版个人资料管理系统(最小化左侧的按钮、图标上的头像)</a></dt>
+	  <dd style="display: none;"> 个人觉得这个功能还不错，部分人可能不习惯。可前往以下URL关闭<br/>
+	  chrome://flags/#enable-new-profile-management<br/>
+	  chrome://flags/#enable-fast-user-switching<br/>
+	  chrome://flags/#enable-google-profile-info<br/>
+	  chrome://flags/#enable-new-avatar-menu
+	  </dd></dl>
+	  
+	  <dl>
+	  <dt><a href="index.html#nogo">扩展程序内容验证 (此扩展程序可能已损坏)</a></dt>
+	  <dd style="display: none;">Google为了增强安全性在Chrome40中加入了扩展程序验证这一功能，一旦检测到扩展程序文件哈希值与商店内不符即判断扩展损坏<br/>
+	  出现扩展程序损坏的原因有两种<br/>
+	  1.你的PC中有恶意程序在篡改你的扩展文件<br/>
+	  2.无法连通Google服务器获取哈希值而导致损坏<br/>
+	  可前往 chrome://flags/#extension-content-verification 将引导模式改为严格强制实施模式<br/>
+	  <br/>
+	  <strong style="color:red">*注：此项修改可能有安全风险，因为你的扩展文件可能遭到恶意程序的修改，更改此选项后请保持良好的上网习惯</strong>
+	  </dd></dl>
+
+
+	  <br/><br/>
+	  <p style="color:green">*请小心，本页面列出的这些实验性功能可能有风险，请勿随意修改本页面未列出的项目<br/>
+	  *较不稳定的功能我们会用*标注并且使用红色字体</p>
+
+	  	  
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <p>
+  Copyright©2005-2015 百度Chrome吧<br/>
+    建议使用<a href="download.html" target="_blank">Google Chrome浏览器</a>访问本站
+	 </p>
+
+</div>
+<script src="jquery.min.js"></script> 
+<script src="main-test.js"></script>
+
+</body>
+</html>
