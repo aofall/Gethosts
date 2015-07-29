@@ -13,11 +13,11 @@
 <body>
 <div class="head-warp">
   <div class="head">
-    <h1><a href="http://tieba.baidu.com/f?ie=utf-8&kw=chrome"><img alt="Chrome" src="chrome.jpg" style="width:140px"></a></h1>
+    <h1><a href="http://tieba.baidu.com/f?ie=utf-8&kw=chrome"><img alt="Chrome" src="./chrome.jpg" style="width:140px"></a></h1>
     <div class="nav-box">
       <ul>
           <li><a href="index.html">首页</a></li>
-          <li class="cur"><a href="download.html">下载</a></li>
+          <li class="cur"><a href="./download.html">下载</a></li>
           <li class="last"><a href="http://tieba.baidu.com/f?ie=utf-8&kw=chrome" target="_blank">百度贴吧&gt;&gt;</a></li>
       </ul>
       <div class="nav-line" style="left: 274px; width: 52px;"></div>
@@ -42,21 +42,13 @@
 <h1>常见问题</h1><br/>              
 <dl>
     <dt><a href="#nogo">版本分支介绍</a></dt>
-    <dd>Google Chrome：存在四个版本分支<br/><br/>
+    <dd><br/>
 1.Stable Channel / 稳定版／正式版，为追求稳定的普通用户使用，更新很慢<br/><br/>
 2.Beta Channel / 测试版，测试版发布前的公开测试所用，版本上的新功能不会作太多修改，主要为安全上的测试，可能会存在不稳定情况，适合喜欢较稳定又可尝鲜的朋友下载使用。<br/><br/>
 3.Dev Channel / 开发版，主要为功能上的测试，可能存在稳定性问题，更新速度通常为一周一次，适合开发人员使用。<br/><br/>
 4.Canary Build / 金丝雀版，2010年7月加入，比开发版更新更不稳定，但相对的也会加入更多测试性的新功能，仅适合开发人员或追求紧贴最新版本的用户使用。Canary Build有一个特色是它可以独立安装及免安装，不会覆盖原本的“Google Chrome”版本，让系统中可以同时拥有两套安装版“Google Chrome”。<br/><br/>
-Chromium:（摘自 Wiki） / 开放源代码<br/>
-Chromium是Google为发展自家的浏览器Google Chrome而开启的计划，新功能会率先在Chromium上实现，待验证后才会应用在Google Chrome上，故Google Chrome的功能会相对落后但较稳定。<br/>
-Chromium的更新速度很快，每隔数小时即有新的开发版本发布，而且可以免安装。<br/>
-Google Chrome是基于Chromium制造，但包含非开放源代码套件，主要是多媒体相关。</dd>
-</dl>
-
-<dl>
-    <dt><a href="#nogo">关于64位浏览器</a></dt>
-	<dd>在下面的对应链接后面加上 &platform=win64 即可获取64位的浏览器，安装64位浏览器时需要将32位的卸载<br/>
-	<br/>在Windows平台上目前大量的插件（不是扩展）没有推出64bit的插件，导致了插件异常。严重依赖插件（如QQ快速登陆、支付宝证书、百度云管家控件等）用户尝尝鲜即可，不要试图把64bit浏览器当作主力使用！</dd>
+32位浏览器与64位浏览器除程序架构外无任何差别，在Windows平台下建议使用32位浏览器
+</dd>
 </dl>
 
 <dl>
@@ -115,15 +107,26 @@ Google Chrome是基于Chromium制造，但包含非开放源代码套件，主�
 <dl>
     <dt><a href="#nogo"><strong>Windows</strong></a></dt>
 	<dd>
-<a href="https://www.google.cn/chrome/browser/index.html?hl=zh-CN" target="_blank" style="color:#0078b6">在线安装稳定版 Stable Channel</a><br/>
-<a href="https://www.google.cn/chrome/browser/desktop/index.html?hl=zh-CN&standalone=1" target="_blank" style="color:#0078b6">离线安装稳定版 Stable Channel</a><br/>
-<a href="https://www.google.cn/chrome/browser/desktop/index.html?hl=zh-CN&extra=betachannel" target="_blank"style="color:#0078b6">在线安装测试版 Beta Channel</a><br/>
-<a href="https://www.google.cn/chrome/browser/desktop/index.html?hl=zh-CN&standalone=1&extra=betachannel" target="_blank" style="color:#0078b6">离线安装测试版 Beta Channel</a><br/>
-<a href="https://www.google.cn/chrome/browser/desktop/index.html?hl=zh-CN&extra=devchannel" target="_blank" style="color:#0078b6">在线安装开发版 Dev Channel</a><br/>
-<a href="https://www.google.cn/chrome/browser/desktop/index.html?hl=zh-CN&standalone=1&extra=devchannel" target="_blank" style="color:#0078b6">离线安装开发版 Dev Channel</a><br/>
+<a href="https://www.google.cn/chrome/browser/index.html?hl=zh-CN&platform=win" target="_blank" style="color:#0078b6">在线安装稳定版32位 Stable Channel</a><br/>
+<a href="https://www.google.cn/chrome/browser/index.html?hl=zh-CN&platform=win&standalone=1" target="_blank" style="color:#0078b6">离线安装稳定版32位 Stable Channel</a><br/>
+<a href="https://www.google.cn/chrome/browser/index.html?hl=zh-CN&platform=win64" target="_blank" style="color:#0078b6">在线安装稳定版64位 Stable Channel</a><br/>
+<a href="https://www.google.cn/chrome/browser/index.html?hl=zh-CN&platform=win64&standalone=1" target="_blank" style="color:#0078b6">离线安装稳定版64位 Stable Channel</a><br/>
+<a href="https://www.google.cn/chrome/browser/beta.html?hl=zh-CN&platform=win" target="_blank" style="color:#0078b6">在线安装测试版32位 Beta Channel</a><br/>
+<a href="https://www.google.cn/chrome/browser/beta.html?hl=zh-CN&platform=win&standalone=1" target="_blank" style="color:#0078b6">离线安装测试版32位 Beta Channel</a><br/>
+<a href="https://www.google.cn/chrome/browser/beta.html?hl=zh-CN&platform=win64" target="_blank" style="color:#0078b6">在线安装测试版64位 Beta Channel</a><br/>
+<a href="https://www.google.cn/chrome/browser/beta.html?hl=zh-CN&platform=win64&standalone=1" target="_blank" style="color:#0078b6">离线安装测试版64位 Beta Channel</a><br/>
+<a href="https://www.google.cn/chrome/browser/index.html?hl=zh-CN&platform=win&extra=devchannel" target="_blank" style="color:#0078b6">在线安装开发版32位 Dev Channel</a><br/>
+<a href="https://www.google.cn/chrome/browser/index.html?hl=zh-CN&platform=win&extra=devchannel&standalone=1" target="_blank" style="color:#0078b6">离线安装开发版32位 Dev Channel</a><br/>
+<a href="https://www.google.cn/chrome/browser/index.html?hl=zh-CN&platform=win64&extra=devchannel" target="_blank" style="color:#0078b6">在线安装开发版64位 Dev Channel</a><br/>
+<a href="https://www.google.cn/chrome/browser/index.html?hl=zh-CN&platform=win64&extra=devchannel&standalone=1" target="_blank" style="color:#0078b6">离线安装开发版64位 Dev Channel</a><br/>
+<a href="https://www.google.com/chrome/browser/canary.html?hl=zh-CN&platform=win" target="_blank" style="color:#0078b6">在线安装金丝雀32位 Canary Channel</a><br/>
+<a href="https://www.google.com/chrome/browser/canary.html?hl=zh-CN&standalone=1&platform=win" target="_blank" style="color:#0078b6">离线安装金丝雀32位 Canary Channel (注:仍需下载少量数据)</a><br/>
+<a href="https://www.google.com/chrome/browser/canary.html?hl=zh-CN&platform=win64" target="_blank" style="color:#0078b6">在线安装金丝雀64位 Canary Channel</a><br/>
+<a href="https://www.google.com/chrome/browser/canary.html?hl=zh-CN&standalone=1&platform=win64" target="_blank" style="color:#0078b6">离线安装金丝雀64位 Canary Channel (注:仍需下载少量数据)</a><br/>
 <a href="http://pan.baidu.com/share/link?uk=3508695471&shareid=2338828618" target="_blank" style="color:#0078b6">百度网盘</a><br/>
 <br/>
-推荐使用离线安装，可自动更新<br/>
+如果不清楚自己应该安装哪个版本和多少位的浏览器请阅读本页面最上方的版本分支介绍<br/>
+推荐使用离线安装或百度网盘，可自动更新<br/>
 <strong style="color:red">在线安装需要使用VPN等全局代理</strong><br/>
 </dd>
 </dl>
@@ -131,30 +134,34 @@ Google Chrome是基于Chromium制造，但包含非开放源代码套件，主�
 <dl>
     <dt><a href="#nogo"><strong>Linux</strong></a></dt>
 	<dd>
-<a href="https://www.google.cn/chrome/browser/desktop/index.html?platform=linux" target="_blank" style="color:#0078b6">在线安装稳定版 Stable Channel</a><br/>
-<a href="https://www.google.cn/chrome/browser/desktop/index.html?platform=linux&extra=betachannel" target="_blank" style="color:#0078b6">在线安装测试版 Beta Channel</a><br/>
-<a href="https://www.google.cn/chrome/browser/desktop/index.html?platform=linux&extra=devchannel" target="_blank" style="color:#0078b6">在线安装开发版 Dev Channel</a><br/>
-<a href="https://www.google.cn/chrome/browser/desktop/index.html?platform=linux&standalone=1" target="_blank" style="color:#0078b6">离线安装稳定版 Stable Channel</a><br/>
-<a href="https://www.google.cn/chrome/browser/desktop/index.html?platform=linux&extra=betachannel&standalone=1" target="_blank" style="color:#0078b6">离线安装测试版 Beta Channel</a><br/>
-<a href="https://www.google.cn/chrome/browser/desktop/index.html?platform=linux&extra=devchannel&standalone=1" target="_blank" style="color:#0078b6">离线安装开发版 Dev Channel</a><br/>
+<a href="https://www.google.cn/chrome/browser/index.html?hl=zh-CN&platform=linux" target="_blank" style="color:#0078b6">在线安装稳定版 Stable Channel</a><br/>
+<a href="https://www.google.cn/chrome/browser/index.html?hl=zh-CN&platform=linux&standalone=1" target="_blank" style="color:#0078b6">离线安装稳定版 Stable Channel</a><br/>
+<a href="https://www.google.cn/chrome/browser/beta.html?hl=zh-CN&platform=linux" target="_blank" style="color:#0078b6">在线安装测试版 Beta Channel</a><br/>
+<a href="https://www.google.cn/chrome/browser/beta.html?hl=zh-CN&platform=linux&standalone=1" target="_blank" style="color:#0078b6">离线安装测试版 Beta Channel</a><br/>
+<a href="https://www.google.cn/chrome/browser/index.html?hl=zh-CN&platform=linux&extra=devchannel" target="_blank" style="color:#0078b6">在线安装开发版 Dev Channel</a><br/>
+<a href="https://www.google.cn/chrome/browser/index.html?hl=zh-CN&platform=linux&extra=devchannel&standalone=1" target="_blank" style="color:#0078b6">离线安装开发版 Dev Channel</a><br/>
 <a href="http://pan.baidu.com/share/link?uk=3508695471&shareid=2338828618" target="_blank" style="color:#0078b6">百度网盘</a><br/>
 <br/>
-推荐使用离线安装，可自动更新<br/>
+如果不清楚自己应该安装哪个版本的浏览器请阅读本页面最上方的版本分支介绍<br/>
+推荐使用离线安装装或百度网盘，可自动更新<br/>
 <strong style="color:red">在线安装需要使用VPN等全局代理</strong><br/>
 </dd></dl>
 
 <dl>
     <dt><a href="#nogo"><strong>Mac OS X</strong></a></dt>
 	<dd>
-<a href="https://www.google.cn/chrome/browser/desktop/index.html?platform=mac" target="_blank" style="color:#0078b6">在线安装稳定版 Stable Channel </a><br/>
-<a href="https://www.google.cn/chrome/browser/desktop/index.html?platform=mac&extra=betachannel" target="_blank" style="color:#0078b6">在线安装测试版 Beta Channel</a><br/>
-<a href="https://www.google.cn/chrome/browser/desktop/index.html?platform=mac&extra=devchannel" target="_blank" style="color:#0078b6">在线安装开发版 Dev Channel</a><br/>
-<a href="https://www.google.cn/chrome/browser/desktop/index.html?platform=mac&standalone=1" target="_blank" style="color:#0078b6">离线安装稳定版 Stable Channel</a><br/>
-<a href="https://www.google.cn/chrome/browser/desktop/index.html?platform=mac&extra=betachannel&standalone=1" target="_blank" style="color:#0078b6">离线安装测试版 Beta Channel</a><br/>
-<a href="https://www.google.cn/chrome/browser/desktop/index.html?platform=mac&extra=devchannel&standalone=1" target="_blank" style="color:#0078b6">离线安装开发版 Dev Channel</a><br/>
+<a href="https://www.google.cn/chrome/browser/index.html?hl=zh-CN&platform=mac" target="_blank" style="color:#0078b6">在线安装稳定版 Stable Channel</a><br/>
+<a href="https://www.google.cn/chrome/browser/index.html?hl=zh-CN&platform=mac&standalone=1" target="_blank" style="color:#0078b6">离线安装稳定版 Stable Channel</a><br/>
+<a href="https://www.google.cn/chrome/browser/beta.html?hl=zh-CN&platform=mac" target="_blank" style="color:#0078b6">在线安装测试版 Beta Channel</a><br/>
+<a href="https://www.google.cn/chrome/browser/beta.html?hl=zh-CN&platform=mac&standalone=1" target="_blank" style="color:#0078b6">离线安装测试版 Beta Channel</a><br/>
+<a href="https://www.google.cn/chrome/browser/index.html?hl=zh-CN&platform=mac&extra=devchannel" target="_blank" style="color:#0078b6">在线安装开发版 Dev Channel</a><br/>
+<a href="https://www.google.cn/chrome/browser/index.html?hl=zh-CN&platform=mac&extra=devchannel&standalone=1" target="_blank" style="color:#0078b6">离线安装开发版 Dev Channel</a><br/>
+<a href="https://www.google.com/chrome/browser/canary.html?hl=zh-CN&platform=mac" target="_blank" style="color:#0078b6">在线安装金丝雀版 Canary Channel</a><br/>
+<a href="https://www.google.com/chrome/browser/canary.html?hl=zh-CN&platform=mac&standalone=1" target="_blank" style="color:#0078b6">离线安装金丝雀版 Canary Channel (注:仍需下载少量数据)</a><br/>
 <a href="http://pan.baidu.com/share/link?uk=3508695471&shareid=2338828618" target="_blank" style="color:#0078b6">百度网盘</a><br/>
 <br/>
-推荐使用离线安装，可自动更新<br/>
+如果不清楚自己应该安装哪个版本的浏览器请阅读本页面最上方的版本分支介绍<br/>
+推荐使用离线安装装或百度网盘，可自动更新<br/>
 <strong style="color:red">在线安装需要使用VPN等全局代理</strong><br/>
 </dd></dl>
 
@@ -197,10 +204,10 @@ http://dl.google.com/chrome/install/<strong>[版本号后两位]</strong>/chrome
   </div>
 </div>
 <div class="footer">
-  <p>云计算服务商 <a href="http://sae.sina.com.cn/" target="_blank"><img src="http://sae.sina.com.cn/doc/_images/poweredby-117x12px.gif"  alt="云计算服务商" /></a><br/>
-      Copyleft©2005-2015 <a href="http://tieba.baidu.com/f?ie=utf-8&kw=chrome" target="_blank">百度Chrome吧</a><br/>
+  <p>
+  Copyleft©2005-2015 百度Chrome吧<br/>
     建议使用<a href="download.html" target="_blank">Google Chrome浏览器</a>访问本站
-	</p>
+	 </p>
 </div>
 <script src="./jquery.min.js"></script> 
 <script src="./main-test.js"></script>
