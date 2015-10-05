@@ -1,3 +1,5 @@
+From 64.233.188.0/19 ， 不同IP段证书分布不一定相同，但大致相似
+
 17-19 mail.google.com
 
 31/91/98/100-102/113/114/118/125/136/138/139/188/190 *.google.com
@@ -12,7 +14,7 @@
 
 85-87 *.orkut.com
 
-90/238 cert-test.sandbox.google.com
+238 cert-test.sandbox.google.com
 
 94/194-196/198/199 google.com
 
@@ -53,3 +55,5 @@
 193 m.google.com
 
 211 *.ext.google.com
+
+90 用于证书测试
